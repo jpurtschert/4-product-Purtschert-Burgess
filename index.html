@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        <!-- google fonts --> 
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Itim|Rock+Salt|Walter+Turncoat&display=swap" rel="stylesheet">
+        
         <!-- internal style -->
         <style>
             body,h1 {font-family: "Montserrat", sans-serif}
@@ -29,36 +32,29 @@
     
     <body>
         
-        <!-- Navegation
+        <!-- Navigation --> 
         <nav>
-            <div class="w3-bar w3-display-topright topnav" style="padding-right: 50px;">
-                <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black">HOME</a>
-                <a href="#photos" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-hide-small">Photos</a>
-                <a href="#info" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-hide-small">Info</a>
-                <a href="#shop" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-hide-small">Shop</a>
+            <div class="w3-bar topnav" style="padding-right: 50px;">
+                <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="openCity('home')">HOME</a>
+                <a href="#photos" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-hide-small" onclick="openCity('photos')" >Photos</a>
+                <a href="#info" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-hide-small" onclick="openCity('info')">Info</a>
+                <a href="#shop" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-hide-small" onclick="openCity('shop')">Shop</a>
                 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
             </div>
-        </nav> --> 
-        
-        <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button" onclick="openCity('home')">home</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('photos')">photos</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('info')">info</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('shop')">shop</button>
-        </div>
-        
+        </nav>
+
         <!-- Content -->
         <div class="w3-content" style="max-width:1500px">
             
-            <div id="home" class="w3-container city">
-                <h1 class="w3-middle"> HOME </h1>
+            <div id="home" class="city">
+                <h2 class="w3-center">HOME</h2>
             </div>
-        
-            <div id="photos" class="w3-container city" style="display:none">
-
-                <!-- Header -->
-                <header class="w3-center w3-margin-bottom">
-                    <h1><b>PHOTOLIO</b></h1>
+            
+            <div id="photos" class="city" style="display:none">
+            
+                <!-- Header -->     
+                <header class="w3-center">
+                    <h2>PHOTOS</h2>
                 </header>
 
                 <!-- Photo Grid -->
@@ -93,42 +89,52 @@
             
             </div>
             
-            <div id="info" class="w3-container city" style="display:none">
-                <h1 class="w3-middle"> INFO </h1>
+            <div id="info" class="city" style="display:none">
+                <h2 class="w3-center">INFO</h2>
             </div>
             
-            <div id="shop" class="w3-container city" style="display:none">
-                <h1 class="w3-middle"> SHOP </h1>
+            <div id="shop" class="city" style="display:none">
+                <h2 class="w3-center">SHOP</h2>
             </div>
-       
+     
         </div>
-            
+
         <!-- Footer -->
-        <footer></footer>
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
  
-        <!-- Java --> 
+        <!-- Java Script --> 
         <script>
+            
             //Responsive Navegation
             function myFunction() {
-                var x = document.getElementById("demo");
-                if (x.className.indexOf("w3-show") == -1) {
+              var x = document.getElementById("demo");
+              if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
             } else { 
                 x.className = x.className.replace(" w3-show", "");
-            }
-          }
+              }
+            } 
             
-        //Tabbed Navegation    
-        function openCity(cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(cityName).style.display = "block";
-}
+            //Tabbed Navegation
+            function openCity(cityName) {
+              var i;
+              var x = document.getElementsByClassName("city");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              document.getElementById(cityName).style.display = "block";  
+            }
             
         </script>
+        
 
     </body>
     
