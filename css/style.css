@@ -5,3 +5,9 @@
     position: fixed!important;
     z-index: 1;
 }
+
+.topnav {
+    padding: 20px;
+    width: 100%;
+    background-color: lightgray;
+}
