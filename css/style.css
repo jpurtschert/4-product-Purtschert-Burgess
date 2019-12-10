@@ -1,12 +1,19 @@
 .topnav {
     padding: 20px;
     width: 100%;
-    background-color: lightgray;
+    background-color: #e0e7fa;
+    font-size: 20px;
+    color:#6188e4;
+}
+.navhover:hover{
+    background-color: #6188e4 !important;
+    color:#e0e7fa !important;
+
 }
 
 h2 {
-    font-family: 'Gochi Hand', cursive;
-    font-family: 'Rock Salt', cursive;
-    font-family: 'Itim', cursive;
-    font-family: 'Walter Turncoat', cursive;
+    /*font-family: 'Gochi Hand', cursive;*/
+    /*font-family: 'Rock Salt', cursive;*/
+    /*font-family: 'Itim', cursive;*/
+    /*font-family: 'Walter Turncoat', cursive;*/
 }
