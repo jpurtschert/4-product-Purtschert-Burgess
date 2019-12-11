@@ -38,7 +38,6 @@
                 <a href="#home" class="w3-bar-item w3-button w3-text-grey navhover" onclick="openCity('home')" >Home</a>
                 <a href="#photos" class="w3-bar-item w3-button w3-text-grey w3-hide-small navhover" onclick="openCity('photos')">Photos</a>
                 <a href="#info" class="w3-bar-item w3-button w3-text-grey w3-hide-small navhover" onclick="openCity('info')">Info</a>
-                <a href="#shop" class="w3-bar-item w3-button w3-text-grey w3-hide-small navhover" onclick="openCity('shop')">Shop</a>
                 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
             </div>
         </nav>
@@ -47,7 +46,11 @@
         <div class="w3-content" style="max-width:1500px;">
             
             <div id="home" class="city">
-                <h1 class="w3-center">HOME</h1>
+                <!-- The video -->
+                <video controls autoplay loop id="myVideo">
+                    <source src="img/home.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 
             </div>
             
@@ -64,38 +67,34 @@
                     <img src="img/img1.jpg" style="width:100%">
                     <img src="img/img4.jpg" style="width:100%">
                     <img src="img/img7.jpg" style="width:100%">
-                    <img src="img/img8.jpg" style="width:100%">
-                    <img src="img/img9.jpg" style="width:100%">
-                    <img src="img/img10.jpg" style="width:100%">
+                    <img src="img/img10.png" style="width:100%">
+                    <img src="img/img11.jpg" style="width:100%">
+                    <img src="img/img12.jpeg" style="width:100%">
                 </div>
 
                 <div class="w3-third">
                     <img src="img/img2.jpg" style="width:100%">
                     <img src="img/img5.jpg" style="width:100%">
                     <img src="img/catgif.gif" style="width:100%">
-                    <img src="/w3images/london.jpg" style="width:100%">
-                    <img src="/w3images/rocks.jpg" style="width:100%">
-                    <img src="/w3images/avatar_g.jpg" style="width:100%">
+                    <img src="img/img13.jpg" style="width:100%">
+                    <img src="img/img14.jpeg" style="width:100%">
+                    <img src="img/img15.jpg" style="width:100%">
                 </div>
 
                 <div class="w3-third">
                     <img src="img/img3.jpg" style="width:100%">
                     <img src="img/img6.jpg" style="width:100%">
-                    <img src="/w3images/gondol.jpg" style="width:100%">
-                    <img src="/w3images/skies.jpg" style="width:100%">
-                    <img src="/w3images/lights.jpg" style="width:100%">
-                    <img src="/w3images/workshop.jpg" style="width:100%">
+                    <img src="img/img16.jpeg" style="width:100%">
+                    <img src="img/img17.jpg" style="width:100%">
+                    <img src="img/img18.jpg" style="width:100%">
+                    <img src="img/img19.jpg" style="width:100%">
                 </div>
             </div>
             
             </div>
             
             <div id="info" class="city" style="display:none">
-                <h2 class="w3-center">INFO</h2>
-            </div>
-            
-            <div id="shop" class="city" style="display:none">
-                <h2 class="w3-center">SHOP</h2>
+                <h1 class="w3-center" style="font-family: 'Gochi Hand', cursive;">INFO</h1>
             </div>
      
         </div>

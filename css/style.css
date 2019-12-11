@@ -11,9 +11,20 @@
 
 }
 
-h2 {
-    /*font-family: 'Gochi Hand', cursive;*/
-    /*font-family: 'Rock Salt', cursive;*/
-    /*font-family: 'Itim', cursive;*/
-    /*font-family: 'Walter Turncoat', cursive;*/
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+    top: 85px;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Gochi Hand', cursive;
 }
