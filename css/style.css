@@ -33,11 +33,30 @@ p   {
 .button {
     background-color: transparent;
     border: none;
-    float: left;
-    position:absolute;
-    right:25%;
     font-size: 40px;
     color: #2253c6;
+    position:absolute;
+    left: 40%;
 }
 
+.profiles {
+    text-decoration: underline;
+    font-size: 22px;
+}
 
+.reviews {
+    font-size:18px;
+}
+
+.mymodal {
+    box-shadow:0 6px 10px 0 RGBA(0,0,0,.9);
+}
+
+.modalcontent {
+    color:white;
+    background-color:#396add;
+}
+
+.stars {
+    color: yellow;
+}
